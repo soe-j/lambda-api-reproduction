@@ -1,0 +1,19 @@
+{
+  "name": "lambda-api-reproduction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soe-j/lambda-api-reproduction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soe-j/lambda-api-reproduction/issues"
+  },
+  "homepage": "https://github.com/soe-j/lambda-api-reproduction#readme"
+}
