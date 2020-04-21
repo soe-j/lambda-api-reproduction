@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/soe-j/lambda-api-reproduction/issues"
   },
-  "homepage": "https://github.com/soe-j/lambda-api-reproduction#readme"
+  "homepage": "https://github.com/soe-j/lambda-api-reproduction#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
