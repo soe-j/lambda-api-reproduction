@@ -10,9 +10,10 @@ const server = app.listen(1337, () => {
 // fixup headers key like Lambda
 app.use((req, res, next) => {
   for (oldkey in req.headers) {
-      var newkey = oldkey.replace(/((?:^|-)[a-z])/g, function(val) { return val.toUpperCase(); });
+      var newkey = oldkey.replace(/((?:^|-)[a-z])/g, val => val.toUpperCase());
       // custom hack for X-Parse-Os-Version ==> X-Parse-OS-Version
-      newkey = newkey.replace(/(-Os-)/g, function(val) { return val.toUpperCase(); });
+      newkey = newkey.replace(/(-Os-)/g, val => val.toUpperCase());
+
       req.headers[newkey] = req.headers[oldkey];
       delete req.headers[oldkey];
   }
